@@ -21,6 +21,16 @@ Activate the virtual environment:
 
 Your prompt should have if the activation of the virtual env worked.
 
+## Installing Jupyter
+
+If you want to use a jupyter notebook, you can install Jupyter with
+
+	pip install jupyter
+
+And then:
+
+	jupyter notebook
+
 ## Installing PyTorch
 
 You need to go on [the PyTorch page](https://pytorch.org/get-started/locally/#mac-anaconda) and choose from a selector the things you have, it will generate a command to paste in your terminal to install it.
