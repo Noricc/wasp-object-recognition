@@ -6,7 +6,7 @@ We want to take the [MobileNet](https://pytorch.org/hub/pytorch_vision_mobilenet
 
 The goal is to use some data from the [Food 101 dataset](https://www.kaggle.com/kmader/food41) and try to use it to extend MobileNet so that it can classify pictures of food as well.
 
-## How to sent up an environment with Python
+## How to set up an environment with Python
 
 Make sure you are using Python 3: `python --version`. On Ubuntu, you can probably use the `python3` command to resolve any ambiguities.
 
