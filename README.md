@@ -23,9 +23,9 @@ Your prompt should have if the activation of the virtual env worked.
 
 ## Installing Jupyter
 
-If you want to use a jupyter notebook, you can install Jupyter with
+If you want to use a Jupyter notebook, you can install Jupyter and all the required packages
 
-	pip install jupyter
+	pip install -r packages
 
 And then:
 
