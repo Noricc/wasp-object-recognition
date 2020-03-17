@@ -141,10 +141,10 @@ def main() :
     [img_folder_train, img_folder_eval, _] = torch.utils.data.dataset.random_split(img_folder, [n_img_train, n_img_eval, n_img_rest])
 
     # load the training set in random order
-    data_loader_train = torch.utils.data.DataLoader(img_folder_train, batch_size=8,
+    data_loader_train = torch.utils.data.DataLoader(img_folder_train, batch_size=16, num_workers=20,
                                               shuffle=True)
 
-    data_loader_eval = torch.utils.data.DataLoader(img_folder_eval, batch_size=8,
+    data_loader_eval = torch.utils.data.DataLoader(img_folder_eval, batch_size=16, num_workers=20,
                                               shuffle=True)
 
     dataset_sizes = {'train' : n_img_train, 'val' : n_img_eval}
