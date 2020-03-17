@@ -159,7 +159,16 @@ def main() :
     class_names = img_folder.classes
 
     # model for training
+
     model_ft = model
+
+    out_features = 101
+    num_features = model_ft.classifier[1].in_features
+    model_ft.classifier = torch.nn.Sequential(
+        torch.nn.Dropout(p=0.2, inplace=False),
+        torch.nn.Linear(in_features=num_features,
+                        out_features=out_features,
+                    bias=True))
 
     # num_ftrs = model_ft.fc.in_features
     # Here the size of each output sample is set to 2.
