@@ -12,12 +12,12 @@ Make sure you are using Python 3: `python --version`. On Ubuntu, you can probabl
 
 Create an environment directory, the packages you install with `pip` (for instance, PyTorch) will be stored there. I put it in the "env" directory.
 
-	virtualenv -p python3 env
+    virtualenv -p python3 env
 
 Activate the virtual environment:
 
-	# If you are using bash
-	source env/bin/activate
+    # If you are using bash
+    source env/bin/activate
 
 Your prompt should have if the activation of the virtual env worked.
 
@@ -25,11 +25,11 @@ Your prompt should have if the activation of the virtual env worked.
 
 If you want to use a Jupyter notebook, you can install Jupyter and all the required packages
 
-	pip install -r packages
+    pip install -r packages
 
 And then:
 
-	jupyter notebook
+    jupyter notebook
 
 Warning: You may have to run these commands *even if you have Jupyter installed on your machine already*, as it's set up to work with your packages when installed this way.
 
@@ -40,3 +40,11 @@ You need to go on [the PyTorch page](https://pytorch.org/get-started/locally/#ma
 ## Downloading the images
 
 You need to download the images from [kaggle](https://www.kaggle.com/kmader/food41#1002850.jpg).
+
+## Pre-trained models
+
+There are three models that were saved at different stages of learning.
+
+- `food_model_2e7`: Model 2 epoch 7 - MobileNet with only last layer re-trained (epoch 7)
+- `food_model_2e0`: Model 2 epoch 0 - MobileNet with only last layer re-trained (epoch 0)
+- `food_model_e2`: Model 1 epoch 2 - MobileNet architecture re-trained on the food data set (without re-initliazing the weights).
